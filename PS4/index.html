@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Student Managment System</title>
+  </head>
+  <style>
+    form{
+      width: 50%;
+      border: 1px dotted gray;
+      padding: 32px;
+      text-align: center;
+    }
+    label, input, textarea, select{
+      width: 100%;
+    }
+  </style>
+  <body>
+    <form action="save.php" method="POST">
+      <h2>Student Registration Form</h2>
+      <label>Registration Number</label>
+      <input name="reg-num" type="text">
+      <label>Full Name</label>
+      <input name="full-name" type="text">
+      <label>Date of Birth</label>
+      <input name="dob" type="date">
+      <label>Gender</label>
+      <select name="gender">
+        <option value="female">Female</option>
+        <option value="male">Male</option>
+      </select>
+      <label>Address</label>
+      <textarea name="address"></textarea>
+      <label>Phone</label>
+      <input name="phone" type="text">
+      <input type="submit" value="Submit">
+    </form>
+  </body>
+</html>
